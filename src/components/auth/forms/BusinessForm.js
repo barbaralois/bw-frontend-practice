@@ -24,7 +24,7 @@ const BusinessForm = () => {
           console.log(err);
         });
     }
-  };
+ };
 
   const handleLogin = (data) => {
     axios
@@ -60,7 +60,7 @@ const BusinessForm = () => {
           type="password"
           placeholder="Password"
           name="password"
-          ref={register({ required: true, minLength: 5 })}
+          ref={register({ required: true, minLength: 4 })}
         />
         {pathname.includes('register') && (
           <>
@@ -68,7 +68,7 @@ const BusinessForm = () => {
               type="password"
               placeholder="Re-enter Password"
               name="password_verify"
-              ref={register({ required: true, minLength: 5 })}
+              ref={register({ required: true, minLength: 4 })}
             />
             <input
               type="text"
